@@ -23,55 +23,70 @@
 # puts y.inspect
 
 # 8.)
-# def greater_than(array, num)
+# def greater_than_y(array, num)
 #     x = 0
-#     array.each { |i| x += 1 if i > num }
+#     for i in array
+#         if i > num
+#             x += 1
+#         end
+#     end
 #     return x
 # end
 
-# puts greater_than([1,2,3,4,5], 3)
+# puts greater_than_y([1,3,5,7], 0)
 
 # 9.)
-# def square_root(arr)
-#     new_arr = []
-#     for i in arr
-#         new_arr.insert(-1, i*i)
+# def square_the_values(array)
+#     new_array = []
+#     for i in array
+#         new_array.insert(-1, i*i)
 #     end
-#     return new_arr.inspect
+#     new_array.inspect
 # end
 
-# puts square_root([1,5,10,-2])
+# puts square_the_values([1,5,10,-2])
 
 # 10.)
-# def remove_negative(array)
-#     new_arr = []
+# def eliminate_negative_numbers(array)
+#     new_array = []
 #     for i in array
-#         if i >= 0
-#             new_arr.insert(-1, i)
+#         if i <= 0
+#             new_array.insert(-1, 0)
 #         else
-#             new_arr.insert(-1, 0)
+#             new_array.insert(-1, i)
 #         end
 #     end
-#     return new_arr
+#     new_array
 # end
 
-# puts remove_negative([1,5,10,-2, -22, 1, 0, 24])
+# puts eliminate_negative_numbers([1,5,10,7,-2]).inspect
 
 # 11.)
 # def max_min_avg(array)
-#     min = array.min
-#     max = array.max
-#     avg = 0
-
-#     for i in array
-#         avg += i
-#     end
-    
-#     avg = avg / array.length
-
-#     return "Max: #{max} Min: #{min} Avg: #{avg}"
+#     answers = Hash.new("answer")
+#     answers = {"Min" => array.min, "Max" => array.max, "Average" => array.sum/array.size}
 # end
 
-# puts max_min_avg([1,5,10,-2])
+# puts max_min_avg([1, 5, 10, -2, -10, 25, 212])
 
 # 12.)
+# def shifting(array)
+#     array.slice(1..array.size).insert(-1, 0)
+# end
+
+# puts shifting([1,5,10,7,-2]).inspect
+
+# 13.)
+# def number_to_string(array)
+#     new_array = []
+#     for i in array
+#         if i < 0
+#             new_array.insert(-1, 'Dojo')
+#         else
+#             new_array.insert(-1, i)
+#         end
+#     end
+#     new_array
+# end
+
+# puts number_to_string([-1,-3,2]).inspect
