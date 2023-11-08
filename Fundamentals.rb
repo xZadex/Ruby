@@ -173,3 +173,11 @@
 # puts y
 
 # puts Array.new(4, 2).reject { |elem| elem.even? }
+
+puts ["ant", "bear", "cat"].any? { |word| word.length >= 3 } # => true
+puts (1..4).collect { |i| i*i } # => [1, 4, 9, 16]
+puts (1..4).collect { "cat" } # => ["cat", "cat", "cat", "cat"]
+puts (1..10).detect { |i| i %5 == 0 and i % 7 == 0 } # => nil
+puts (1..100).detect { |i| i %5 == 0 and i % 7 == 0 } # => 35
+puts (1..10).find_all { |i| i % 3 == 0 } # => [3, 6, 9]
+puts (1..10).reject { |i| i % 3 == 0 } # => [1, 2, 4, 5, 7, 8, 10]
