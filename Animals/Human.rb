@@ -12,3 +12,4 @@ end
 
 person = Human.new
 person.another_method
+puts person.health
