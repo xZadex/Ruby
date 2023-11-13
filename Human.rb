@@ -8,7 +8,7 @@ class Human
     end
 
     def attack(target)
-        if target.class.ancestors[0].to_s == 'Human'
+        if target.class.ancestors.include?(Human)
             target.take_damage(@strength)
         end
         self
