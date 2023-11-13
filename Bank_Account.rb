@@ -71,11 +71,11 @@ end
 end
 
 a = BankAccount.new()
-b = BankAccount.new()
-c = BankAccount.new()
-d = BankAccount.new()
-e = BankAccount.new()
-f = BankAccount.new()
+# b = BankAccount.new()
+# c = BankAccount.new()
+# d = BankAccount.new()
+# e = BankAccount.new()
+# f = BankAccount.new()
 
 BankAccount.number_of_accounts
 a.deposit_checkings(1000000).account_information
